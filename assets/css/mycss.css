@@ -206,25 +206,6 @@ a {
 	background-color: #2B7FF2;
 }
 
-@media screen and (max-width: 800px) {
-	.section {
-		width: calc(100% - 2em) !important;
-		max-width: calc(100% - 2em) !important;
-		margin-left: 1em !important;
-		margin-right: 1em !important; 
-		padding: 1.5em 1em !important;
-	}
-
-	.profile .about-me {
-		margin-left: 1em;
-	    border: 2px solid #D1E9FF;
-	    position: relative;
-	    border-radius: 6px;
-	    padding: 1.5em 1em;
-	    color: #121212;
-	}
-}
-
 @media screen and (max-width: 450px) {
 	.section {
 		width: calc(100% - 2em);
@@ -258,3 +239,22 @@ a {
 		padding-left: 1em !important;
 	}
 } 
+
+@media screen and (max-width: 800px) {
+	.section {
+		width: calc(100% - 2em) !important;
+		max-width: calc(100% - 2em) !important;
+		margin-left: 1em !important;
+		margin-right: 1em !important; 
+		padding: 1.5em 1em !important;
+	}
+
+	.profile .about-me {
+		margin-left: 1em;
+	    border: 2px solid #D1E9FF;
+	    position: relative;
+	    border-radius: 6px;
+	    padding: 1.5em 1em;
+	    color: #121212;
+	}
+}
