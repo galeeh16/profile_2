@@ -21,6 +21,10 @@ p {
 	line-height: 28px;
 }
 
+.bold {
+	font-weight: bold;
+}
+
 .header {
 	width: 100%;
 	background: #7F00FF;  /* fallback for old browsers */
@@ -205,6 +209,19 @@ a {
 	height: 15px;
 	background-color: #2B7FF2;
 }
+
+.hobby {
+	width: 60%;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	/*display: grid;*/
+	/*grid-template-columns: repeat(5, 1fr);*/
+	/*grid-column-gap: 1em;*/
+}
+
 
 @media screen and (max-width: 450px) {
 	.section {
