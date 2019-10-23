@@ -207,5 +207,35 @@ a {
 }
 
 @media (max-width: 450px) {
+	.section {
+		width: calc(100% - 2em) !important;
+		max-width: calc(100% - 2em) !important;
+		margin-left: 1em !important;
+		margin-right: 1em !important;
+		padding: 1.5em 1em !important;
+	}
+	.profile {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
 
+	.profile .image {
+		height: auto;
+		text-align: center;
+	}
+
+	.profile .about-me {
+		margin-top: 2em;
+		padding: 1,5em 1em;
+	}
+
+	.profile .about-me span {
+		top: -19px;
+		left: 25%;
+		font-size: 22px;
+	}
+
+	.work-section {
+		padding-left: 1em !important;
+	}
 }
