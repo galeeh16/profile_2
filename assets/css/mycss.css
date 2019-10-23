@@ -240,9 +240,9 @@ a {
 	}
 } 
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
 	.section {
-		width: calc(100% - 2em) !important;
+		width: 100%;
 		max-width: calc(100% - 2em) !important;
 		margin-left: 1em !important;
 		margin-right: 1em !important; 
