@@ -206,6 +206,25 @@ a {
 	background-color: #2B7FF2;
 }
 
+@media screen and (max-width: 800px) {
+	.section {
+		width: calc(100% - 2em);
+		max-width: calc(100% - 2em);
+		margin-left: 1em;
+		margin-right: 1em; 
+		padding: 1.5em 1em;
+	}
+
+	.profile .about-me {
+		margin-left: 1em;
+	    border: 2px solid #D1E9FF;
+	    position: relative;
+	    border-radius: 6px;
+	    padding: 1.5em 1em;
+	    color: #121212;
+	}
+}
+
 @media screen and (max-width: 450px) {
 	.section {
 		width: calc(100% - 2em);
