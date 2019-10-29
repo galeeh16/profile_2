@@ -72,4 +72,32 @@ $(document).ready(function() {
 		}
 	});
 
+
+	$(window).on("scroll", function() {
+  		var scrollHeight = $(document).height();
+  		var scrollPosition = $(window).height() + $(window).scrollTop();
+  		if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+      		$('#scroll').css('bottom', '1.5em', function() {
+        	$(".slide-text span").css('display', 'none');
+      	});
+  		} else {
+      		$('#scroll').css('bottom', '-3em');
+      		slideText();
+    }
+  });
+
+	$('#scroll').on('click', function() {
+      	$('html, body').animate({
+        	scrollTop: 0
+      	}, 500);
+    });
+
 });
+
+function slideText() {
+    var slide = $('.slide-text span');
+    for( var i = 0; i < slide.length; i++ ) {
+      	var time = i * 500;
+      	$(slide[i]).fadeIn(time);
+    }
+ }
