@@ -415,9 +415,14 @@ footer .year {
 		height: 3px;
 		transform: rotate(45deg) translate(-5px, -6px);
 	}
+	.gallery div {
+		width: 100%;
+	}
 	.gallery {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
 		justify-content: center;
-		align-items: center;
 	}
 } 
 
