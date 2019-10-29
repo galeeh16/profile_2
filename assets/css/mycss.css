@@ -350,7 +350,7 @@ footer .year {
 	z-index: 4;
 	cursor: pointer;
 	transition: all 0.6s ease-in;
-	box-shadow: 3px 3px 4px rgba(0,0,0,0,12);
+	box-shadow: 4px 4px 5px rgba(0,0,0,0,15);
 }
 #scroll:hover {
 	background-color: #3eac4f;

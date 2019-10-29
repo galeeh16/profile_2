@@ -81,7 +81,7 @@ $(document).ready(function() {
       		$('#scroll').css('bottom', '1.5em');
   		} else {
       		$('#scroll').css('bottom', '-3em');
-    }
+    	}
   });
 
 	$('#scroll').click(function() {
