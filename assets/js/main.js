@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	$('.year').html(new Date().getFullYear());
+
 	$('.burger').on('click', function() {
 		$('.nav-link').toggleClass('nav-active');
 		$('.burger').toggleClass('toggle');

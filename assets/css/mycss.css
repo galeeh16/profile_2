@@ -322,7 +322,19 @@ a {
 	-ms-object-fit: cover;
 }
 
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #2C2C2D;
+	color: #E9E9E9;
+	padding: 1.45em;
+}
 
+footer .year {
+	margin-left: 5px;
+	margin-right: 5px;
+}
 
 @media screen and (max-width: 450px) {
 	body {
@@ -404,6 +416,7 @@ a {
 		transform: rotate(45deg) translate(-5px, -6px);
 	}
 } 
+
 
 @media (max-width: 800px) {
 	.nav-link {
