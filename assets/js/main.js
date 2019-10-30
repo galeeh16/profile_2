@@ -35,7 +35,7 @@ $(document).ready(function() {
     		}, 500);
 		} else {
 			$('html, body').animate({
-	        	scrollTop: ($("#work-experiences").offset().top - 40)
+	        	scrollTop: ($("#work-experiences").offset().top - 80)
 	    	}, 500);
 		}		
 	});
@@ -51,7 +51,7 @@ $(document).ready(function() {
     		}, 500);
 		} else {
 			$('html, body').animate({
-        		scrollTop: ($("#skill-section").offset().top - 40)
+        		scrollTop: ($("#skill-section").offset().top - 80)
     		}, 500);
 		}
 	});
@@ -67,13 +67,21 @@ $(document).ready(function() {
     		}, 500);
 		} else {
 			$('html, body').animate({
-        		scrollTop: ($("#portfolio-section").offset().top - 40)
+        		scrollTop: ($("#portfolio-section").offset().top - 80)
     		}, 500);
 		}
 	});
 
 
 	$(window).on("scroll", function() {
+		if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			if($(window).scrollTop() > 60) {
+				$('.nav').addClass('sticky-top');
+			} else {
+				$('.nav').removeClass('sticky-top');
+			}
+		}
+
   		var scrollHeight = $(document).height();
   		var scrollPosition = $(window).height() + $(window).scrollTop();
   		// if ((scrollHeight - scrollPosition) / scrollHeight === 0) {

@@ -30,6 +30,14 @@ p {
 	background-color: white;
 }
 
+.nav.sticky-top {
+	position: fixed !important;
+	top: 0;
+	width: 100%;
+	left: 0;
+	right: 0;
+}
+
 /*NAVBAR*/
 .nav .logo {
 	color: #A60EBA;
