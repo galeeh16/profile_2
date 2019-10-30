@@ -1,6 +1,12 @@
 $(document).ready(function() {
 	$('.year').html(new Date().getFullYear());
 
+	lightbox.option({
+      // 'resizeDuration': 200,
+      // 'wrapAround': true,
+      disableScrolling: true
+    });
+
 	$('.burger').on('click', function() {
 		$('.nav-link').toggleClass('nav-active');
 		$('.nav').toggleClass('active');
