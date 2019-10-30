@@ -476,7 +476,7 @@ footer .year {
 	margin-right: 5px;
 }
 
-.nav #scroll {
+#scroll {
 	position: fixed;
 	opacity: 1;
 	right: 1em;
@@ -503,9 +503,15 @@ footer .year {
 	color: #fff;
 }
 
-.sticky-top #scroll {
+.nav #scroll {
+	display: block;
+	opacity: 1;
+}
+.nav.active #scroll {
+	display: none;
 	opacity: 0;
 }
+
 
 .slide-text span {
 	display: none;

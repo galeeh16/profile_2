@@ -23,19 +23,35 @@ p {
 
 .nav {
 	position: relative;
+	top: 0;
 	display: flex;
 	justify-content: space-around; 
 	align-items: center;
 	min-height: 8vh;
 	background-color: white;
+	transition: all 0.4s ease-in;
 }
 
-.nav.sticky-top {
-	position: fixed !important;
+.sticky-top {
+	position: fixed;
+	opacity: 0;
+	top: -66px;
+}
+
+.sticky-top {
+	position: fixed;
+	opacity: 1;
 	top: 0;
 	width: 100%;
 	left: 0;
 	right: 0;
+	box-shadow: 4px 4px 7px rgba(0,0,0,0.23);
+	-webkit-box-shadow: 4px 4px 7px rgba(0,0,0,0.23);
+	-moz-box-shadow: 4px 4px 7px rgba(0,0,0,0.23);
+	-ms-box-shadow: 4px 4px 7px rgba(0,0,0,0.23);
+	background-color: #000;
+	z-index: 3;
+	transition: all 0.4 ease-in;
 }
 
 /*NAVBAR*/
@@ -61,6 +77,10 @@ p {
 	color: #333;
 	text-decoration: none;
 
+}
+
+.sticky-top .nav-link a{
+	color: #eee !important;
 }
 
 .nav-item a {
@@ -458,6 +478,7 @@ footer .year {
 
 #scroll {
 	position: fixed;
+	opacity: 1;
 	right: 1em;
 	bottom: -3em;
 	border-radius: 50%;
@@ -474,11 +495,24 @@ footer .year {
 	-webkit-box-shadow: 4px 4px 5px rgba(0,0,0,0,25);
 	-moz-box-shadow: 4px 4px 5px rgba(0,0,0,0,25);
 	-ms-box-shadow: 4px 4px 5px rgba(0,0,0,0,25);
+	transition: all 0.3s;
 }
+
 #scroll:hover {
 	background-color: #3eac4f;
 	color: #fff;
 }
+
+.nav #scroll {
+	display: block;
+	opacity: 1;
+}
+.nav.active #scroll {
+	display: none;
+	opacity: 0;
+}
+
+
 .slide-text span {
 	display: none;
 }
