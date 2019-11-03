@@ -4,7 +4,8 @@ $(document).ready(function() {
 	lightbox.option({
       // 'resizeDuration': 200,
       // 'wrapAround': true,
-      disableScrolling: true
+      disableScrolling: true,
+      alwaysShowNavOnTouchDevices: true
     });
 
 	$('.burger').on('click', function() {
