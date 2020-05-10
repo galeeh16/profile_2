@@ -82,6 +82,11 @@ $(document).ready(function() {
 
 
 	$(window).on("scroll", function() {
+		if($(window).scrollTop() > 60) { 
+			$('.nav').addClass('sticky-top');
+		} else {
+			$('.nav').removeClass('sticky-top');
+		}
 		if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			if($(window).scrollTop() > 60) {
 				$('.nav').addClass('sticky-top');

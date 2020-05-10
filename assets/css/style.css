@@ -33,7 +33,7 @@ p {
 }
 
 .sticky-top {
-	position: fixed;
+	position: fixed !important;
 	opacity: 0;
 	top: -66px;
 }
@@ -318,7 +318,7 @@ a {
 		overflow-x: hidden;
 	}
 	.nav {
-		position: fixed;
+		position: relative;
 		width: 100%;
 		z-index: 2;
 		box-shadow: 0 4px 8px rgba(0,0,0,0.12);
@@ -415,7 +415,7 @@ a {
 		padding: 1.5em 1em !important;
 	}
 
-	.profile .about-me {navLinkFade
+	.profile .about-me {
 		margin-left: 1em;
 	    border: 2px solid #D1E9FF;
 	    position: relative;
