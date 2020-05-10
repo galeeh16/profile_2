@@ -401,6 +401,9 @@ a {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+	.sticky-top {
+		background-color: #fff !important;
+	}
 } 
 
 @media screen and (max-width: 800px) {
