@@ -521,3 +521,7 @@ footer .year {
 .slide-text span {
 	display: none;
 }
+
+ul li::before {
+	color: #8D929A;
+}
