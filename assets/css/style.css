@@ -397,7 +397,8 @@ a {
 		transform: rotate(45deg) translate(-5px, -6px);
 	}
 	.gallery div {
-		width: 100%;
+		width: 100% !important;
+		margin-right: 0 !important;
 	}
 	.gallery {
 		display: flex;
