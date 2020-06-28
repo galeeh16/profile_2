@@ -273,7 +273,7 @@ p {
 }
 
 .subtitle {
-	color: #999;
+	color: #878b8f;
 	font-style: italic;
 	/*font-weight: bold;*/
 }
@@ -294,10 +294,14 @@ a {
 .bar {
 	height: 15px;
 	background-color: #ECECEC;
+	border-radius: 3px;
 }
 .bar .bar-percent {
 	display: block;
 	height: 15px;
+	border-radius: 3px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
 	background-color: #2B7FF2;
 }
 
@@ -522,6 +526,16 @@ footer .year {
 	display: none;
 }
 
-ul li::before {
-	color: #8D929A;
+ul.list {
+	list-style: none; 
+}
+
+ul.list li::before {
+	content: "\2022";
+	color: #787494;
+	font-weight: bold; 
+  	display: inline-block;
+  	width: 1em; 
+	margin-left: -1em;
+	margin-top: 2px;
 }
